@@ -25,7 +25,7 @@
 
 /* ------------------ Part 1: Creating a Nav Bar Component --------------------- */
 /**
- * Step 1: Create a new file in our src folder called Nav.js
+ * Step 1: Create a new file in our src folder called Nav.js  COMPLETE 7/22/2024
  * Step 2: Create the base format for a class-based component.
  *         Inside of the return(), return: <nav>Nav</nav>
  * Step 3: In your App.js, import your <Nav> component inside of the div in return()
@@ -72,9 +72,14 @@
 
 /* -- ALL YOUR COMPONENT/STYLE IMPORTS HERE -- */
 import './App.css'
+import Nav from './Nav'
+import WelcomeSection from './WelcomeSection';
 
 function App() {
-  return <div className="App"></div>
+  return <div className="App">
+    <Nav/>
+    <WelcomeSection/>
+  </div>;
 }
 
 export default App
